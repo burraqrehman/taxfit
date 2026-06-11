@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Calm, confident fintech palette — deep teal on cool off-white */
+  --background: 220 20% 98%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --muted: 220 16% 95%;
+  --muted-foreground: 218 12% 44%;
+  --border: 220 16% 90%;
+  --input: 220 16% 88%;
+  --ring: 168 78% 28%;
+
+  --primary: 168 78% 28%; /* deep teal-green */
+  --primary-foreground: 0 0% 100%;
+  --primary-soft: 168 52% 94%;
+
+  --accent: 38 92% 50%; /* warm amber, used sparingly for "best match" */
+  --accent-foreground: 26 60% 16%;
+  --accent-soft: 40 96% 94%;
+
+  --success: 152 60% 36%;
+  --warning: 32 90% 46%;
+  --danger: 0 72% 48%;
+
+  --radius: 0.875rem;
+
+  /* Loaded via <link> in layout (sandbox blocks build-time font fetch). */
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+.dark {
+  --background: 222 38% 8%;
+  --foreground: 220 18% 92%;
+  --card: 222 32% 11%;
+  --card-foreground: 220 18% 92%;
+  --muted: 222 24% 16%;
+  --muted-foreground: 218 12% 64%;
+  --border: 222 22% 20%;
+  --input: 222 22% 22%;
+  --ring: 168 64% 44%;
+
+  --primary: 168 64% 44%;
+  --primary-foreground: 222 47% 8%;
+  --primary-soft: 168 40% 18%;
+
+  --accent: 38 92% 56%;
+  --accent-foreground: 26 60% 12%;
+  --accent-soft: 36 40% 18%;
+
+  --success: 152 52% 48%;
+  --warning: 32 86% 56%;
+  --danger: 0 70% 60%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tabular figures for prices and data tables */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Focus visibility — accessibility floor */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle grid texture for hero */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, hsl(var(--border) / 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--border) / 0.5) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 80%);
+}
