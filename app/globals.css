@@ -5,7 +5,7 @@
 :root {
   color-scheme: light;
 
-  /* Calm, confident fintech palette — deep teal on cool off-white */
+  /* Calm, confident fintech palette — vivid azure on cool off-white */
   --background: 220 20% 98%;
   --foreground: 222 47% 11%;
   --card: 0 0% 100%;
@@ -14,11 +14,11 @@
   --muted-foreground: 218 12% 44%;
   --border: 220 16% 90%;
   --input: 220 16% 88%;
-  --ring: 168 78% 28%;
+  --ring: 201 100% 41%;
 
-  --primary: 168 78% 28%; /* deep teal-green */
+  --primary: 201 100% 50%; /* #00A6FF — vivid azure */
   --primary-foreground: 0 0% 100%;
-  --primary-soft: 168 52% 94%;
+  --primary-soft: 201 100% 95%;
 
   --accent: 38 92% 50%; /* warm amber, used sparingly for "best match" */
   --accent-foreground: 26 60% 16%;
@@ -47,11 +47,11 @@
   --muted-foreground: 218 12% 64%;
   --border: 222 22% 20%;
   --input: 222 22% 22%;
-  --ring: 168 64% 44%;
+  --ring: 201 100% 50%;
 
-  --primary: 168 64% 44%;
+  --primary: 201 100% 50%; /* #00A6FF — vivid azure */
   --primary-foreground: 222 47% 8%;
-  --primary-soft: 168 40% 18%;
+  --primary-soft: 201 80% 18%;
 
   --accent: 38 92% 56%;
   --accent-foreground: 26 60% 12%;
