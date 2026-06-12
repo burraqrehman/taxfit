@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: light;
+
   /* Calm, confident fintech palette — deep teal on cool off-white */
   --background: 220 20% 98%;
   --foreground: 222 47% 11%;
@@ -35,6 +37,8 @@
 }
 
 .dark {
+  color-scheme: dark;
+
   --background: 222 38% 8%;
   --foreground: 220 18% 92%;
   --card: 222 32% 11%;
