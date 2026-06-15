@@ -1,5 +1,7 @@
 # TaxFit — Find the tax software that fits
 
+**🔗 Live demo: [taxfit-theta.vercel.app](https://taxfit-theta.vercel.app/)** · deployed on Vercel
+
 **An AI-assisted product recommendation website for a fictional Canadian tax-software company.**
 
 TaxFit helps users pick the right tax-filing product for their situation. Answer a short
@@ -126,9 +128,11 @@ npm run lint        # Next.js / ESLint
 
 ### Deployment
 
+**Live at [taxfit-theta.vercel.app](https://taxfit-theta.vercel.app/).**
+
 The app is a standard Next.js project with zero required environment variables — it deploys
 to **Vercel** (or Netlify / Render / Railway) with no extra configuration: import the repo,
-accept the defaults, deploy.
+accept the defaults, deploy. Every push to `main` triggers an automatic redeploy.
 
 ---
 
